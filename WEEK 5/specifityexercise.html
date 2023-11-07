@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Specificity Example</title>
+    <style>
+        body {
+            color: rgb(79, 173, 21);
+        }
+
+        /* 0, 0, 1 */
+        li {
+            color: rgb(160, 22, 116);
+        }
+
+        /* 0, 1, 0 */
+        .highlight {
+            color: rgb(102, 162, 206);
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <p>Paragraph</p>
+    <ul>
+        <li class="highlight">Person 1</li>
+        <li>Person 2</li>
+        <li class="highlight">Person 3</li>
+        <li>Person 4</li>
+        <!-- which color will be applied to Person 1 and Person 3?-->
+        <!-- <li id="unique" class="highlight">Person 5</li> -->
+    </ul>
+</body>
+
+</html>
